@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #E85C0D;
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--text-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8); 
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  img {
+    max-width: 250px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+    border-radius: 20px;
+  }
+  
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+
+  }
+
+  a:hover {
+    transform: scale(1.05);
+  }
+
+
+}
+
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  
+}
+
+@media (width >= 800px) {
+  .projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+}
+
+
+.pinterestContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pinterestLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #bd081c; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pinterestLink:hover {
+  color: #e60023; 
+}
+
+.pinterestIcon {
+  font-size: 24px;
+  margin-right: 8px;
+}
