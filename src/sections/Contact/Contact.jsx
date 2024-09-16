@@ -11,10 +11,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_lhu7fg2", // Ganti dengan Service ID dari EmailJS
-        "template_5m62w5s", // Ganti dengan Template ID dari EmailJS
+        "service_lhu7fg2",
+        "template_5m62w5s",
         form.current,
-        "z9YRTDmx-fb_F08pN" // Ganti dengan User ID (Public Key) dari EmailJS
+        "z9YRTDmx-fb_F08pN"
       )
       .then(
         (result) => {

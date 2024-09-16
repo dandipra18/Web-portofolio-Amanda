@@ -2,8 +2,8 @@ import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/amanda.jpg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
-import twitterLight from "../../assets/pinterest-light.svg";
-import twitterDark from "../../assets/pinterest-dark.svg";
+import pinterestLight from "../../assets/pinterest-light.svg";
+import pinterestDark from "../../assets/pinterest-dark.svg";
 import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
@@ -15,7 +15,7 @@ function Hero() {
   const { theme, toggleTheme } = useTheme();
 
   const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
+  const pintersetIcon = theme === "light" ? pinterestLight : pinterestDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
@@ -42,13 +42,16 @@ function Hero() {
         </h1>
         <h2>DESAINER</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
+          <a href="https://id.pinterest.com/amandafebriyani29/" target="_blank">
+            <img src={pintersetIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/Carletta23" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/amanda-febriyani-8725251a9/"
+            target="_blank"
+          >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
